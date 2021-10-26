@@ -153,5 +153,7 @@ function checkCell(){
 		cells[4].style.background = "green";
 		cells[6].style.background = "green";
 		setTimeout(reset, 2000);
+	}else if (field.indexOf(0) === -1){
+		setTimeout(reset, 2000);
 	}
 }

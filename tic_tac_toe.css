@@ -27,10 +27,12 @@ header .active {
 
 #crosses{
 	margin: 0px 3% 0px 40%;
+	width: 7%;
 }
 
 #zeros{
 	margin: 0px 40% 0px 3%;
+	width: 7%;
 }
 
 table {
@@ -61,4 +63,65 @@ tr td:last-child{
 
 tr:last-child td{
 	border-bottom: none;
+}
+
+@media only screen and (max-width:1000px){
+	#crosses{
+		margin: 0px 5% 0px 36%;
+		width: 9%;
+	}
+	
+	#zeros{
+		margin: 0px 36% 0px 5%;
+		width: 9%;
+	}
+	table {
+		border-collapse: collapse;
+		position: absolute;
+		margin: 20px 30% 0px 30%;
+		width:40%;
+	}
+	body {
+		background-color: lightblue;
+	}
+}
+
+@media only screen and (max-width:700px){
+	#crosses{
+		margin: 0px 5% 0px 30%;
+		width: 15%;
+	}
+	
+	#zeros{
+		margin: 0px 30% 0px 5%;
+		width: 15%;
+	}
+	table {
+		border-collapse: collapse;
+		position: absolute;
+		margin: 20px 27% 0px 27%;
+		width:46%;
+	}
+	body {
+		background-color: rgb(186, 230, 173);
+	}
+}
+
+@media only screen and (max-width:700px){
+	#crosses{
+		margin: 0px 5% 0px 27%;
+	}
+	
+	#zeros{
+		margin: 0px 27% 0px 5%;
+	}
+	table {
+		border-collapse: collapse;
+		position: absolute;
+		margin: 20px 15% 0px 15%;
+		width:70%;
+	}
+	body {
+		background-color: rgb(111, 77, 151);
+	}
 }
